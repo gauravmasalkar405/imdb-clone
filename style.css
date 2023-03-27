@@ -1,0 +1,174 @@
+:root {
+  --navbar-background-dark: rgb(18, 18, 18);
+  --body-background-color: rgb(87, 87, 87);
+  --primary-heading-color: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-background-color);
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--navbar-background-dark);
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+}
+
+.logo img {
+  height: 2.5rem;
+  width: 5rem;
+  margin: 10px;
+}
+
+.search-bar {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-bar span {
+  color: white;
+  font-size: 2rem;
+}
+
+.search-bar input {
+  width: 700px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.favourite-movies button {
+  margin-left: 5px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  width: 90px;
+  font-size: 1.1rem;
+}
+
+.favourite-movies button:active {
+  background-color: aliceblue;
+}
+
+.search-bar-and-movie-suggestions {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.movie-suggestions {
+  color: black;
+  position: absolute;
+  top: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-suggestions ul li {
+  background-color: rgb(253, 253, 253);
+  height: 40px;
+  width: 700px;
+  padding-left: 20px;
+  border: 1px solid var(--body-background-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.movie-info {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-info img {
+  border-radius: 10px;
+}
+
+.movie-info p {
+  color: white;
+  font-weight: 500;
+}
+
+.movie-info button {
+  width: 100%;
+  height: 30px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+.movie-info button:active {
+  background-color: rgb(14, 243, 64);
+}
+
+@media screen and (max-device-width: 1224px) {
+  .movie-suggestions ul li {
+    width: 500px;
+  }
+  .search-bar input {
+    width: 500px;
+  }
+}
+
+@media screen and (max-device-width: 968px) {
+  .movie-suggestions ul li {
+    width: 350px;
+  }
+  .search-bar input {
+    width: 350px;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .movie-suggestions ul li {
+    width: 150px;
+  }
+  .search-bar input {
+    width: 120px;
+  }
+  .logo img {
+    height: 2rem;
+    width: 3rem;
+    margin: 10px;
+  }
+}

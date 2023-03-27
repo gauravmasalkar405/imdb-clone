@@ -1,0 +1,66 @@
+:root {
+  --navbar-background-dark: rgb(18, 18, 18);
+  --body-background-color: rgb(87, 87, 87);
+  --primary-heading-color: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.favourite-movies {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favourite-movies div {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.favourite-movies div p {
+  width: 60%;
+}
+.favourite-movies div button {
+  background-color: rgb(253, 91, 91);
+  height: 30px;
+  width: 60px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.favourite-movies div button:hover {
+  background-color: rgb(255, 29, 29);
+}
